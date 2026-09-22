@@ -57,9 +57,10 @@ Enter the cloned folder
 II. Create a New File Locally, Commit and Push
 Step 1: Create file
 
-Command:
+Command: 
 
 touch newfile.txt
+
 Explanation:
 
 Creates an empty text file.
@@ -68,39 +69,40 @@ Result:
 
 my_Practical2
 └── newfile.txt
+
 Step 2: Add content
 
 Command:
 
 echo "This is a new file" > newfile.txt
+
 Explanation:
+
 echo → Prints text
 > → Writes text into file
 
 File content:
 
 This is a new file
+
 Step 3: Add file to staging area
 
 Command:
 
 git add newfile.txt
+
 Explanation:
 
 Git does not track files automatically.
 
 git add moves changes to the staging area.
 
+
 Flow:
 
-Working Directory
-       ↓
-git add
-       ↓
-Staging Area
+Working Directory -> git add -> Staging Area
 
 Your warning:
-
 LF will be replaced by CRLF
 
 Meaning:
@@ -108,11 +110,13 @@ Meaning:
 Windows uses CRLF line endings
 Linux uses LF
 Not an error
+
 Step 4: Commit changes
 
 Command:
 
 git commit -m "Added new file"
+
 Explanation:
 
 Creates a permanent snapshot of current changes.
@@ -130,15 +134,17 @@ Commit:
 Flow:
 
 Working Directory
-↓
+->
 Staging Area
-↓
+->
 Commit
+
 Step 5: Push changes to GitHub
 
 Command:
 
 git push origin main
+
 Explanation:
 
 Uploads committed changes from local repository to GitHub.
@@ -146,7 +152,9 @@ Uploads committed changes from local repository to GitHub.
 Breakdown:
 
 git push → Send changes
+
 origin → Remote repository
+
 main → Branch name
 
 Your output:
@@ -160,15 +168,17 @@ Meaning:
 Flow:
 
 Local Repo
-      ↓
+      ->
 git push
-      ↓
+      ->
 GitHub Repository
+
 III. Pull Remote Changes
 
 Command:
 
 git pull origin main
+
 Explanation:
 
 Downloads latest changes from GitHub and merges into local repository.
@@ -176,7 +186,9 @@ Downloads latest changes from GitHub and merges into local repository.
 Breakdown:
 
 pull = fetch + merge
+
 origin = remote
+
 main = branch
 
 Your output:
@@ -189,10 +201,12 @@ No new changes existed on GitHub.
 Flow:
 
 GitHub
- ↓
+ ->
 git pull
- ↓
+ ->
 Local Repository
+
+
 Commands Summary
 git clone <repository_url>
 
