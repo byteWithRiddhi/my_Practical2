@@ -1,13 +1,14 @@
 # my_Practical2
 
 Practical: Git Commands
-Aim
 
-To perform Git operations:
+Aim: To perform Git operations:
 
 Clone a remote repository
 Create a file locally, commit it, and push to GitHub
 Pull remote changes into the local repository
+
+
 What is Git?
 
 Git is a distributed version control system used to track changes in source code and manage project versions.
